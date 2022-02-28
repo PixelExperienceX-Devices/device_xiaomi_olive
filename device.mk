@@ -245,7 +245,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_olivewood
+    android.hardware.light@2.0-service.xiaomi_olive
 
 # LMKD
 # Enable stats logging in LMKD
@@ -414,7 +414,7 @@ PRODUCT_PACKAGES += \
 
 # USB HAL
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.olivewood
+    android.hardware.usb@1.0-service.olive
 
 # Vibrator
 PRODUCT_PACKAGES += \

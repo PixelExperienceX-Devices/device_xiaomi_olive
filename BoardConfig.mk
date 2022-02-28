@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/olivewood
+DEVICE_PATH := device/xiaomi/olive
 
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -38,7 +38,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-TARGET_KERNEL_SOURCE := kernel/xiaomi/olivewood
+TARGET_KERNEL_SOURCE := kernel/xiaomi/olive
 TARGET_KERNEL_CONFIG := olive-perf_defconfig
 TARGET_KERNEL_VERSION := 4.9
 BOARD_KERNEL_SEPARATED_DTBO := true
@@ -127,11 +127,11 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_olivewood
-TARGET_RECOVERY_DEVICE_MODULES := libinit_olivewood
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_olive
+TARGET_RECOVERY_DEVICE_MODULES := libinit_olive
 
 # OTA
-TARGET_OTA_ASSERT_DEVICE := olivewood,olivelite
+TARGET_OTA_ASSERT_DEVICE := olive,olivewood,olivelite
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
