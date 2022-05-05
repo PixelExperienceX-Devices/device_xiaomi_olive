@@ -2,7 +2,7 @@
   {
     "repository" : "vendor_xiaomi_olivewood",
     "target_path": "vendor/xiaomi/olivewood",
-    "remote"     : "pixel-devices-blobs",
+    "remote"     : "pixel-devices",
     "branch"     : "twelve"
   },
   {
